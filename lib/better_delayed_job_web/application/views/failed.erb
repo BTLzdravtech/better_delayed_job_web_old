@@ -4,7 +4,7 @@
 </p>
 <% if @jobs.any? %>
 <div class="failed-job-actions">
-<form action="<%= u('requeue/all') %>" method="POST">
+<form action="<%= u('requeue/failed') %>" method="POST">
   <%= csrf_token_tag %>
   <button type="submit" value="Retry Failed Jobs" class="btn btn-primary">Retry All Jobs</button>
 </form>

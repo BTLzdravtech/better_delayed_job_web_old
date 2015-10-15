@@ -4,7 +4,7 @@
 </p>
 <% if @jobs.any? %>
 <div class="failed-job-actions">
-  <form action="<%= u('requeue/all') %>" method="POST">
+  <form action="<%= u('requeue/pending') %>" method="POST">
     <%= csrf_token_tag %>
     <button type="submit" value="Enqueue All Immediately" class="btn btn-primary">Enqueue All Immediately</button>
   </form>
